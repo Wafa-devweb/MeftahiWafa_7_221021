@@ -1,0 +1,23 @@
+{
+    "groupomania": {
+    "username": "root",
+    "password": "wafa.mango2000",
+    "database": "groupomania",
+    "host": "localhost",
+    "dialect": "mysql"
+    },
+    "test": {
+    "username": "root",
+    "password": "wafa.mango2000",
+    "database": "groupomania",
+    "host": "localhost",
+    "dialect": "mysql"
+    },
+    "production": {
+    "username": "root",
+    "password": "wafa.mango2000",
+    "database": "groupomania",
+    "host": "localhost",
+    "dialect": "mysql"
+    }
+}
