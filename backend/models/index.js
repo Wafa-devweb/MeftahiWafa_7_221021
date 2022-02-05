@@ -20,9 +20,9 @@ const db = {};
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
-db.posts =require ("../routes/post")(sequelize, Sequelize);
-db.users = require("../user")(sequelize, Sequelize)
-db.comments = require("../comment")(sequelize, Sequelize)
+db.posts = require("./post.js")(sequelize, Sequelize);
+db.users = require("./user.js")(sequelize, Sequelize)
+db.comments = require("./comment.js")(sequelize, Sequelize)
 
 db.users.hasMany(db.posts)
 db.posts.belongsTo(db.users)
