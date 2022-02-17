@@ -24,6 +24,7 @@
       </ul> 
 		</div>
   </nav>
+  <router-view/>
 </template>
 
  
@@ -41,7 +42,9 @@ export default {
 
 <!-- Ajouter un attribut pour limiter le CSS à ce composant uniquement-->
 <style scoped> 
-
+#app{
+  background-color: none 'SE2250' ;
+}
 .navbar-brand img{
 width: 100px;
 margin-left: 0em;

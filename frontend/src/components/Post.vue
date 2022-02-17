@@ -86,7 +86,6 @@ export default {
       message: "",
       content:'',
       posts:[],
-      
     };
   },
   props: {

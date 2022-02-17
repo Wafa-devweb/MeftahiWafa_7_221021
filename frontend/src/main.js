@@ -10,4 +10,3 @@ createApp(App)
 // l'application est lancée !
 .mount('#app')
 
-
