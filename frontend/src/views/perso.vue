@@ -1,4 +1,5 @@
 <template>
+<div>
   <navBar />
   <div class="container">
     <div class="container pb-cmnt-container">
@@ -38,6 +39,7 @@
       </div>
     </div>
   </div>
+ </div>
 </template>
 
 <script>

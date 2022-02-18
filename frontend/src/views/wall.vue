@@ -1,6 +1,7 @@
 <template>
-<navBar/>
-<div class="container">
+ <div>
+  <navBar/>
+   <div class="container">
     <h1>Mur de conversation</h1>
                         
             <div class="card p-3 border-blue mt-3"> 
@@ -11,7 +12,8 @@
             </div>
            
         
-</div>
+  </div>
+ </div> 
 </template>
 
 <script>

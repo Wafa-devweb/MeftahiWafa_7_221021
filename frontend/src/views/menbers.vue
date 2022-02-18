@@ -1,4 +1,5 @@
 <template>
+<div>
     <navBar/>
      <h1> Les membres de Groupomania</h1>
       <div class="container mt-5 d-flex justify-content-center">
@@ -15,6 +16,7 @@
                 </div> 
                 
             </div>
+        </div>
         </div>
 </template>
 
