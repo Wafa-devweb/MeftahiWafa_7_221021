@@ -22,7 +22,7 @@
         <p class="card__subtitle" v-if="mode == 'login'">
           Tu n'as pas de compte ?!
           <span class="card__action" @click="switchToCreateAccount()">
-            Créer un compte</span
+           Créer un compte</span
           >
         </p>
         <p class="card__subtitle" v-else>

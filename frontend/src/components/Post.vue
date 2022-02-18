@@ -1,4 +1,4 @@
-<!---poster un commentaire ------>
+<!---poster un commentaire -->
 <template>
   <main>
     <div class="d-flex justify-content-between mt-2">

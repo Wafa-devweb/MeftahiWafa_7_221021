@@ -30,9 +30,9 @@ export default {
   },
   data(){
       return{
-          users:[],
-          email:"",
-        }
+        users:[],
+        email:"",
+     } 
   },
 created(){
   axios.get("http://localhost:3000/api/users", {
@@ -47,17 +47,21 @@ created(){
 },
 methods:{
     deleteOneUser() {
-    const userId= sessionStorage.getItem('user')
-    axios.delete("http://localhost:3000/api/users/" + userId, {
-        headers: { Authorization: "Bearer " + localStorage.token },
-    })
-    .then((response) => console.log(response))
-    .catch((err) => console.log(err));
-    sessionStorage.clear();
-    this.$router.push("/")
-    },
+              const userId= sessionStorage.getItem('user')
+               axios.delete("http://localhost:3000/api/users/" + userId, {
+                    headers: { Authorization: "Bearer " + localStorage.token },
+               })
+                .then((response) => console.log(response))
+                .catch((err) => console.log(err));
+                sessionStorage.clear();
+                this.$router.push("/")
+              
+          },
+}
+
 }
 </script>
+
 
 <style scoped>
 #app {

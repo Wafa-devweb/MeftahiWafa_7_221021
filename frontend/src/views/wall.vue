@@ -1,14 +1,17 @@
 <template>
-  <navBar/>
-  <div class="container">
+<navBar/>
+<div class="container">
     <h1>Mur de conversation</h1>
-    
-    <div class="card p-3 border-blue mt-3"> 
-      <div id="card">
-        <Post v-for="post in posts" v-bind:key="post.id" :post="post" @deletePostEvent="deletePost" />
-     </div>
-    </div> 
-  </div>
+                        
+            <div class="card p-3 border-blue mt-3"> 
+                <div id="card">
+                <Post v-for="post in posts" v-bind:key="post.id" :post="post" @deletePostEvent="deletePost" />
+                
+                </div>
+            </div>
+           
+        
+</div>
 </template>
 
 <script>

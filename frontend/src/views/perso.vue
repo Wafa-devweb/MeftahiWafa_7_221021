@@ -1,5 +1,5 @@
 <template>
-  <navBar>
+  <navBar />
   <div class="container">
     <div class="container pb-cmnt-container">
       <h1>Bienvenue sur ton espace {{ user.firstName }} {{ user.lastName }}</h1>
@@ -38,7 +38,6 @@
       </div>
     </div>
   </div>
-  </navBar>
 </template>
 
 <script>
