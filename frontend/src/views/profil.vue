@@ -84,18 +84,17 @@ methods:{
   },
 }
 };
-
-
 </script>
+
+
 <style scoped>
 #app{
-   font-family:"Comic Sans MS", "cursive";
+  font-family:"Comic Sans MS", "cursive";
   background-color: #cccce2;
 }
 
 body {
-    background-color: #eee;
-
+  background-color: #eee;
 }
 h1{
   display: flex;
@@ -134,6 +133,10 @@ h1{
 input[type=email] {
   border: none;
   border-bottom: 2px solid red;
+}
+
+.mt-5 {
+  padding-bottom: 45px;
 }
 
 </style>

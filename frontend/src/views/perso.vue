@@ -143,17 +143,20 @@ export default {
   },
 };
 </script>
+
+
 <style>
 #app{
   background-color: blanchedalmond;
+  padding-bottom: 90px;
+  display: block;
 }
 </style>
 
 
-
 <style scoped>
 body{
-   BACKGROUND-COLOR: pink;
+  BACKGROUND-COLOR: pink;
 }
 .container {
   font-family: "Comic Sans MS", 'cursive';
@@ -181,7 +184,6 @@ h1 {
 .form {
   margin-top: 30px;
 }
-
 
 .form-control {
   border-radius: 20px;
