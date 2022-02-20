@@ -89,8 +89,7 @@ methods:{
 </script>
 <style scoped>
 #app{
-   font-family
-   :Comic Sans MS, cursive;
+   font-family:"Comic Sans MS", "cursive";
   background-color: #cccce2;
 }
 
@@ -102,24 +101,32 @@ h1{
   display: flex;
   justify-content: center;
   color:#f03434;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Comic Sans MS', 'cursive';
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blanchedalmond;
 }
 .card {
-    background-color: #f19c9c;
-    width: 350px;
-    border-radius: 20px
+  background-color: #f19c9c;
+  width: 350px;
+  border-radius: 20px
 }
 .heading {
-    font-weight: 700
+  font-weight: 700
 }
 .btn {
-    border-radius: 15px !important;
-    color: black;
-    background-color:  rgb(139, 139, 146);
+  border-radius: 15px !important;
+  color: black;
+  background-color:  rgb(139, 139, 146);
 }
 .line-color {
-    color: rgb(224, 17, 17);
-    height: 3px
+  color: rgb(224, 17, 17);
+  height: 3px
 }
 .password p{
   font-size: bolder;

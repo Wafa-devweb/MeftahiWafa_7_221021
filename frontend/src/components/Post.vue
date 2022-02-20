@@ -24,7 +24,7 @@
     </div>
 
     <div class="card p-3 mt-3">
-      <h2>Commentaires</h2>
+      <h2>Commentaires :</h2>
       <div
         class="d-flex flex-column mt-2"
         v-for="comment in comments"

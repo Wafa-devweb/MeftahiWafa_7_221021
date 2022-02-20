@@ -73,12 +73,25 @@ export default {
 
 
 <style scoped>
+
 .container{
   font-family: 'Comic Sans MS';
+  background-color: blanchedalmond;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blanchedalmond;
 }
 h1{
   font-family: 'Comic Sans MS';
   color:red;
+  margin: 40px 0px 40px 0px;
+  display:flex;
+  justify-content:center;
 }
 .card{
   border: 1px solid red;
@@ -88,4 +101,8 @@ h1{
 .form{
   margin-top: 30px;
 }
+.row{
+  background-color: blanchedalmond;
+}
+
 </style>

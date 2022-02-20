@@ -9,9 +9,9 @@
           <div class="panel panel-info">
             <div class="panel-body">
               <div class="form-group green-border-focus">
-                <label for="title">Sujet</label><br />
+                <label for="title">Sujet :</label><br />
                 <input type="text" v-model="title" class="form-control" /><br />
-                <label for="postMsg">Exprimez vous</label>
+                <label for="postMsg">Exprimez vous :</label>
                 <textarea
                   v-model="content"
                   class="form-control"
@@ -145,47 +145,73 @@ export default {
 </script>
 <style>
 #app{
-  background-color: #d1d1eb;
+  background-color: blanchedalmond;
 }
 </style>
 
 
+
 <style scoped>
 body{
-   BACKGROUND-COLOR: rgb(218, 214, 210);
+   BACKGROUND-COLOR: pink;
 }
 .container {
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", 'cursive';
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width : 100%;
 }
 h1 {
-  font-family: "Comic Sans MS", cursive;
-  color: red;
+  font-family: "Comic Sans MS", "cursive";
+  color: grey;
+  display: flex;
+  justify-content: center;
 }
 .card {
   border: 1px solid red;
   box-shadow: 2px 3px 3px red;
-  background-color: rgb(218, 212, 212);
+  background-color: pink;
 }
 .form {
   margin-top: 30px;
 }
 
+
 .form-control {
   border-radius: 20px;
+  width:100%;
 }
 .form-group {
-  margin-top: 30px;
+  margin: 20px 0px 20px 0px;
+  color: grey;
 }
 label {
-  font-family: "Comic Sans MS", cursive;
-  color: rgb(48, 48, 172);
+  font-family: "Comic Sans MS", "cursive";
+  margin-bottom: 5px;
 }
 .row {
+  display: flex;
+  justify-content: flex-start;
   margin-bottom: 50px;
   margin-top: 50px;
-  background-color: rgb(216, 212, 206);
+  background-color: pink;
+
 }
+.row>*{
+  width:100%;
+}
+.btn {
+  margin-bottom:10px;
+}
+
 .mgs {
   color: red;
 }
+
 </style> 

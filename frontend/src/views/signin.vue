@@ -13,7 +13,7 @@
     <fieldset>
       <div class="d-flex flex-column justify-content-center">
         <div class="connect">
-          <h1 class="card__title" v-if="mode == 'login'">------------  Connection  ------------</h1>
+          <h1 class="card__title" v-if="mode == 'login'">------------  Connexion  ------------</h1>
           <h1 class="card__title" v-else>Inscription</h1>
           <br />
         </div>
@@ -192,9 +192,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#app{
-  background-color: none 'SE2250' ;
-}
 
 .container{
   display: flex;
@@ -202,6 +199,7 @@ export default {
   align-items: center;
   justify-content: center;
   align-content: center;
+  background-color: white;
 }
 h1 {
   font-size: 30px;
@@ -219,18 +217,21 @@ h1 {
   cursor: pointer;
   font-size: 15px;
   border-radius: 50PX;
-  box-shadow: 3px 2px red;
   padding: 5px 10px;
+  background-color: pink;
+  border-color: red;
+  color: black;
 }
 img {
   width: 500px;
-  margin-top: -150px;
+  margin-top: -130px;
   margin-bottom: -80px;
 
 }
 .connect {
   display: flex;
   justify-content: center;
+  background-color: pink;
 }
 .card__subtitle {
   display: flex;
@@ -246,12 +247,13 @@ span.card__action {
   border-radius: 50PX;
   box-shadow: 3px 2px 3px 2px red ;
   padding: 5px 10px;
+  margin-left: 10px;
 }
 fieldset {
   display: flex;
   flex-direction: column;
   background-color: blanchedalmond;
-  
+  padding : 40px;
 }
 .form-control {
   margin-top: 10px;

@@ -67,11 +67,16 @@ methods:{
 
 <style scoped>
 #app {
-    font-family : Comic Sans MS, cursive;
-    background-color: #cccce2;
+    font-family : "Comic Sans MS", "cursive";
+    background-color: blanchedalmond;
 }
-body {
-    background-color: #eee;
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: blanchedalmond;
 }
 .card {
     background-color: #d0cde2;
@@ -85,6 +90,8 @@ body {
 }
 .container{
     flex-wrap: wrap;
+    padding-bottom:15%;
+    background-color: blanchedalmond;
 }
 .heading {
     font-weight: 700
@@ -93,7 +100,7 @@ h1{
     display: flex;
     justify-content: center;
     color: #f11f1f;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', 'cursive';
     margin-left: 10px;
 }
 .line-color {
