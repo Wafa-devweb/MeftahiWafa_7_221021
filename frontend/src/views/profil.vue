@@ -134,9 +134,8 @@ input[type=email] {
   border: none;
   border-bottom: 2px solid red;
 }
-
-.mt-5 {
-  padding-bottom: 45px;
+.nav, .container{
+  margin-top: 10px;
 }
 
 </style>

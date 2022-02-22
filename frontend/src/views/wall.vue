@@ -86,6 +86,9 @@ export default {
   width: 100%;
   background-color: blanchedalmond;
 }
+main {
+  margin-top: 30px;
+}
 h1{
   font-family: 'Comic Sans MS';
   color:red;
