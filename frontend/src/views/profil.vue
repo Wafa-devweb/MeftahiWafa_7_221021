@@ -88,32 +88,21 @@ methods:{
 
 
 <style scoped>
-#app{
-  font-family:"Comic Sans MS", "cursive";
-  background-color: #cccce2;
+
+h1{
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-style: inset;
+  padding: 10px;
+  background-color: blanchedalmond;
+  margin-bottom: 50px;
 }
 
-body {
-  background-color: #eee;
-}
-h1{
-  display: flex;
-  justify-content: center;
-  color:#f03434;
-  font-family: 'Comic Sans MS', 'cursive';
-}
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: blanchedalmond;
-}
 .card {
-  background-color: #f19c9c;
+  background-color: bisque;
   width: 350px;
-  border-radius: 20px
+  border-radius: 20px;
 }
 .heading {
   font-weight: 700

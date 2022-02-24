@@ -18,6 +18,8 @@
                   id="postMgs"
                   rows="3"
                 ></textarea>
+                <label for="avatar">Ajouter une image : </label>
+                <input ref="file" v-on:change="handleFileUpload()" type="file" id="image" name="image" accept="image/png, image/jpeg, image/gif">
                 <div class="mgs">{{ message }}</div>
               </div>
               <button
@@ -64,6 +66,7 @@ export default {
       createdAt: "",
       title: "",
       message: "",
+      file: "",
     };
   },
   created() {
@@ -92,14 +95,23 @@ export default {
   },
 
   methods: {
+    handleFileUpload(
+    ){
+      console.log (this.$refs.file.files[0])
+        this.file = this.$refs.file.files[0];
+      },
     postMessage() {
     if (this.content==''|| this.title=='') {
         (this.message="Veuillez inscrire un sujet et un message")
     }else{
+      let formData = new FormData();
+      formData.append("title", this.title);
+      formData.append('file', this.file);
+      formData.append("content", this.content);
       axios
         .post(
           "http://localhost:3000/api/auth/posts/post",
-          { content: this.content, title: this.title },
+         formData,
           {
             headers: {
               Authorization: "Bearer " + sessionStorage.token,
@@ -147,39 +159,28 @@ export default {
 
 <style>
 #app{
-  background-color: blanchedalmond;
   padding-bottom: 90px;
   display: block;
+  margin:0px;
 }
 </style>
 
 
 <style scoped>
-body{
-  BACKGROUND-COLOR: pink;
-}
-.container {
-  font-family: "Comic Sans MS", 'cursive';
+h1 {
+  color:red;
+  display: flex;
+  justify-content: center;
+  border-style: inset;
+  padding: 10px;
+  background-color: blanchedalmond;
+  border-color: indianred;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  width : 100%;
-}
-h1 {
-  font-family: "Comic Sans MS", "cursive";
-  color: grey;
-  display: flex;
-  justify-content: center;
-}
 .card {
   border: 1px solid red;
   box-shadow: 2px 3px 3px red;
-  background-color: pink;
+  background-color:blanchedalmond;
 }
 .form {
   margin-top: 30px;
@@ -191,7 +192,6 @@ h1 {
 }
 .form-group {
   margin: 20px 0px 20px 0px;
-  color: grey;
 }
 label {
   font-family: "Comic Sans MS", "cursive";
@@ -202,8 +202,12 @@ label {
   justify-content: flex-start;
   margin-bottom: 50px;
   margin-top: 50px;
-  background-color: pink;
-
+  border: 1px solid red;
+  box-shadow: 2px 3px 3px red;
+  background-color: blanchedalmond;
+}
+main {
+  margin-top: 20px;
 }
 .row>*{
   width:100%;

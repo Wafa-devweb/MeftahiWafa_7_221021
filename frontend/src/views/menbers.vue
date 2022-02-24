@@ -6,7 +6,7 @@
             <div class="card p-4 mt-3" v-for="user in users"  v-bind:key="user.id">
                 <div class="first">
                     <h6 class="heading">{{user.firstName}} <br/>{{user.lastName}} </h6>
-                    <div class="time d-flex flex-row align-items-center justify-content-between mt-3">
+                    <div class="time d-flex flex-row align-items-center justify-content-center  mt-3">
                     </div>
                 </div>
                 <div class="second d-flex flex-row mt-2">
@@ -66,20 +66,9 @@ methods:{
 
 
 <style scoped>
-#app {
-    font-family : "Comic Sans MS", "cursive";
-    background-color: blanchedalmond;
-}
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: blanchedalmond;
-}
+
 .card {
-    background-color: #d0cde2;
+    background-color: blanchedalmond;
     width: 350px;
     border-radius: 20px;
 	transform: scale(1);
@@ -91,18 +80,21 @@ methods:{
 .container{
     flex-wrap: wrap;
     padding-bottom:15%;
-    background-color: blanchedalmond;
 }
 .heading {
     font-weight: 700
 }
-h1{
-    display: flex;
-    justify-content: center;
-    color: #f11f1f;
-    font-family: 'Comic Sans MS', 'cursive';
-    margin-left: 10px;
+
+h1 {
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-style: inset;
+  padding: 10px;
+  background-color: blanchedalmond;
+  margin-bottom: 50px;
 }
+
 .line-color {
     color: rgb(224, 17, 17);
     height: 3px;

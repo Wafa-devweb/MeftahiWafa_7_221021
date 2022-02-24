@@ -74,33 +74,27 @@ export default {
 
 <style scoped>
 
-.container{
-  font-family: 'Comic Sans MS';
-  background-color: blanchedalmond;
-}
-.navbar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  background-color: blanchedalmond;
+.container {
+  font-family: 'Comic Sans MS', 'cursive';
 }
 main {
   margin-top: 30px;
 }
 h1{
-  font-family: 'Comic Sans MS';
-  color:red;
-  margin: 40px 0px 40px 0px;
-  display:flex;
-  justify-content:center;
+  color: red;
+  display: flex;
+  justify-content: center;
+  border-style: inset;
+  padding: 10px;
+  background-color: blanchedalmond;
+  margin-bottom: 50px;
 }
 .card{
-  border: 1px solid red;
-  box-shadow: 2px 2px 2px red;
-  background-color: rgb(218, 212, 212);
+  border: 1px solid grey;
+  box-shadow: 2px 3px 3px #c75e5e;
+  background-color: peachpuff;
 }
+
 .form{
   margin-top: 30px;
 }

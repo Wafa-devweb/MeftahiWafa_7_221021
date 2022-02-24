@@ -1,6 +1,6 @@
 <template> 
             <nav class="row-12  navbar navbar-expand-lg navbar mx-3 ">
-            <div class="navbar-brand"><img src="../assets/icon-title.jpg" alt="titre"></div>
+            <div class="navbar-brand"><img src="../assets/icon-title.png" alt="titre"></div>
             
             <div class="collapse navbar-collapse d-flex" id="navbarNav">
               <ul class="navbar-nav">
@@ -44,6 +44,30 @@ export default {
 <style scoped> 
 #app{
   font-family : "Comic Sans MS", "cursive";
+  margin:0px;
+  padding:0px;
+  background-color: 'E1-45';
+}
+.navbar{
+  WIDTH: 100%;
+  MARGIN-BOTTOM: 40PX;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+  margin-left:0;
+  margin-right:0;
+}
+.mx-3 {
+  margin-right: unset;
+  margin-left: unset;
+}
+body{
+  margin:0px;
+  padding:0px;
+  font-family: 'Comic Sans MS', 'cursive';
 }
 .navbar-brand img{
 width: 100px;
@@ -62,12 +86,8 @@ transform: scale(1.2);
 }
 
 .nav-link{
-font-family: 'Comic Sans MS', 'cursive';
 color: red;
 }
 
-.navbar{
-WIDTH: 100%;
-MARGIN-BOTTOM: 40PX;
-}
+
 </style>

@@ -14,6 +14,7 @@
     <div class="titleCon">
       <p class="title">{{ post.title }}</p>
       <p class="content">{{ post.content }}</p>
+      <p class="image"><img v-bind:src="post.imageURL" style="width:30%;" alt=""/></p>
     </div>
     <div class="mt-2 d-flex justify-content-end">
       <button
@@ -86,6 +87,7 @@ export default {
       message: "",
       content:'',
       posts:[],
+      imageURL:"",
     };
   },
   props: {
@@ -199,16 +201,29 @@ export default {
 <style scoped>
 
 h1 {
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", "cursive";
   color: blueviolet;
 }
 h2 {
   font-size: smaller;
 }
+
+h6{
+  font-weight:600;
+}
 .card {
-  border: 1px solid blueviolet;
-  box-shadow: 2px 3px 3px blueviolet;
+  border: 1px solid chocolate;
+  box-shadow: 2px 3px 3px coral;
   background-color: antiquewhite;
+}
+.date{
+  font-style: italic;
+  font-size: 12px;
+}
+.flex-row{
+  border-style: dotted;
+  padding:7px;
+  border-color: grey;
 }
 .form {
   margin-top: 30px;

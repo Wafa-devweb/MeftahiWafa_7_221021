@@ -199,7 +199,6 @@ export default {
   align-items: center;
   justify-content: center;
   align-content: center;
-  background-color: white;
 }
 h1 {
   font-size: 30px;
@@ -218,20 +217,19 @@ h1 {
   font-size: 15px;
   border-radius: 50PX;
   padding: 5px 10px;
-  background-color: pink;
+  background-color: white;
   border-color: red;
   color: black;
 }
 img {
-  width: 500px;
-  margin-top: -130px;
+  width: 400px;
+  margin-top: -100px;
   margin-bottom: -80px;
 
 }
 .connect {
   display: flex;
   justify-content: center;
-  background-color: pink;
 }
 .card__subtitle {
   display: flex;

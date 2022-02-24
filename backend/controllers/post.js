@@ -23,7 +23,7 @@ if (!req.file) {
         userId: userId,
         content: req.body.content,
         title: req.body.title,
-        image: "",
+        ImageURL:"",
     })
         .then((post) => res.status(201).json(post))
         .catch((error) => {console.log(error)
@@ -34,7 +34,7 @@ if (!req.file) {
             userId: userId,
             content: req.body.content,
             title: req.body.title,
-            image: `${req.protocol}://${req.get("host")}/images/${
+            imageURL: `${req.protocol}://${req.get("host")}/images/${
                 req.file.filename
             }`,
         })
