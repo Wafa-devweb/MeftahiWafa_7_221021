@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('groupomania','root','wafa.mango2000',{
+const sequelize = new Sequelize('Groupomania','root','wafa.mango2000',{
   host: 'localhost',
   dialect: 'mysql',
   pool: {
@@ -39,4 +39,3 @@ db.comments.belongsTo(db.users)
 db.sequelize.sync({ alter:true });
 
 module.exports = db;
-

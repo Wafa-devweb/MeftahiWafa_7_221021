@@ -15,7 +15,10 @@ module.exports = (sequelize, Sequelize) => sequelize.define("post", {
     type: DataTypes.STRING,
     allowNull: false
   },
-  
+  imageURL : {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
   
 },
 
@@ -24,6 +27,5 @@ module.exports = (sequelize, Sequelize) => sequelize.define("post", {
   modelName: 'post' 
  
 });
-
 
 

@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const mailValidator = require('email-validator');
 var passwordValidator = require('password-validator');
 const models =require('../models/index.js');
-const { users } = require('../models/index.js');
+const { users }= require('../models/index.js');
 
 var schema = new passwordValidator();
   schema
