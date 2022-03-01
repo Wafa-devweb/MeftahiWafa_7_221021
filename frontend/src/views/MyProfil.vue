@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navBar/>
+    <navBar />
       <h1>Mon Profil</h1>
       <div class="container mt-5 d-flex justify-content-center">
             <div class="card p-4 mt-3">

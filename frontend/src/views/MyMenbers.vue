@@ -26,7 +26,7 @@
 import navBar from '../components/NavBar.vue'
 import axios from 'axios'
 export default {
-  name:'MyMenber',
+  name:'MyMenbers',
   components:{
     navBar
   },

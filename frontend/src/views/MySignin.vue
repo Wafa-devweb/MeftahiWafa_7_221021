@@ -107,7 +107,7 @@ import axios from "axios";
 
 export default {
   name: "MySignin",
-  data: function () {
+data: function () {
     return {
       mode: "login",
       firstName: "",
@@ -144,7 +144,7 @@ export default {
         sessionStorage.setItem("user", JSON.stringify(responseUser)); //push de l'id dans la sessionStorage
         sessionStorage.setItem("token", responseToken);
         console.log(this.$router);
-        this.$router.push("perso");
+        this.$router.push("MyPerso");
         })
         .catch(() => {
           {
@@ -176,7 +176,7 @@ export default {
           let responseToken = response.data.token;
           sessionStorage.setItem("user", JSON.stringify(responseUser)); //push de l'id dans la sessionStorage
           sessionStorage.setItem("token", responseToken);
-          this.$router.push("perso");
+          this.$router.push("MyPerso");
           })
           .catch(() => {
             {

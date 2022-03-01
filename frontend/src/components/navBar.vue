@@ -1,5 +1,5 @@
-<template> 
-            <nav class="row-12  navbar navbar-expand-lg navbar mx-3 ">
+<template>
+   <nav class="row-12  navbar navbar-expand-lg navbar mx-3 ">
             <div class="navbar-brand"><img src="../assets/icon-title.png" alt="titre"></div>
             
             <div class="collapse navbar-collapse d-flex" id="navbarNav">
@@ -14,7 +14,7 @@
                     <router-link to="/MyProfil" class="nav-link">Profil |</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/MyMenbre" class="nav-link">Membres |</router-link>
+                    <router-link to="/MyMenber" class="nav-link">Membres |</router-link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" @click="logout()">Déconnection</a>
@@ -23,7 +23,6 @@
             </div>
           </nav> 
 </template>
-
 
  
 
