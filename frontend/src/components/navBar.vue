@@ -5,16 +5,16 @@
             <div class="collapse navbar-collapse d-flex" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <router-link to="/perso" class="nav-link">Ma page |</router-link>
+                    <router-link to="/MyPerso" class="nav-link">Ma page |</router-link>
                 </li>
                  <li class="nav-item">
-                    <router-link to="/wall" class="nav-link">Mur |</router-link>
+                    <router-link to="/MyWall" class="nav-link">Mur |</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/profil" class="nav-link">Profil |</router-link>
+                    <router-link to="/MyProfil" class="nav-link">Profil |</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/menbre" class="nav-link">Membres |</router-link>
+                    <router-link to="/MyMenbre" class="nav-link">Membres |</router-link>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" @click="logout()">Déconnection</a>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-        name: 'navBar',
+        name: 'NavBar',
         methods:{
             logout(){
                 sessionStorage.clear();

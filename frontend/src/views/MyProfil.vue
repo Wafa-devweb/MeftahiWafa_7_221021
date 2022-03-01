@@ -31,10 +31,10 @@
 </template>
 
 <script>
-import navBar from '../components/navBar.vue'
+import navBar from '../components/NavBar.vue'
 import axios from 'axios'
 export default {
-  name:'profil',
+  name:'MyProfil',
   components:{
     navBar
   },

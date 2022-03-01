@@ -45,12 +45,12 @@
 </template>
 
 <script>
-import navBar from "../components/navBar.vue";
-import Post from "../components/Post";
+import navBar from "../components/NavBar.vue";
+import Post from "../components/MyPost";
 import axios from "axios";
 
 export default {
-  name: "Perso",
+  name: "MyPerso",
   components: {
     navBar,
     Post,

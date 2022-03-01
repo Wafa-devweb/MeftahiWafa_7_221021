@@ -106,7 +106,7 @@
 import axios from "axios";
 
 export default {
-  name: "signin",
+  name: "MySignin",
   data: function () {
     return {
       mode: "login",

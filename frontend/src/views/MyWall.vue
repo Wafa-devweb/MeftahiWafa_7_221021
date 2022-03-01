@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import navBar from '../components/navBar.vue'
-import Post from '../components/Post'
+import navBar from '../components/NavBar.vue'
+import Post from '../components/MyPost'
 import axios from 'axios'
 
 export default {
-  name:'Wall',
+  name:'MyWall',
   components:{
     navBar,
     Post

@@ -3,29 +3,29 @@ import { createWebHistory, createRouter } from "vue-router";
 const routes = [
     {
       path: '/',
-      name: 'signin',
-      component: () => import('../views/signin.vue')
+      name: 'MySignin',
+      component: () => import('../views/MySignin.vue')
     },
     
     {  
-      path: '/wall',
-      name: 'wall',
-      component: () => import('../views/wall.vue')
+      path: '/MyWall',
+      name: 'MyWall',
+      component: () => import('../views/MyWall.vue')
     },
     {
-      path: '/profil',
-      name: 'profil',
-      component: () => import('../views/profil.vue')
+      path: '/MyProfil',
+      name: 'MyProfil',
+      component: () => import('../views/MyProfil.vue')
     },
     {
-      path: '/perso',
-      name: 'perso',
-      component: () => import('../views/perso.vue'),
+      path: '/MyPerso',
+      name: 'MyPerso',
+      component: () => import('../views/MyPerso.vue'),
     },
     {
-      path: '/menbre',
-      name: 'menbre',
-      component: () => import('../views/menbers.vue')
+      path: '/MyMenber',
+      name: 'MyMenber',
+      component: () => import('../views/MyMenbers.vue')
     }
 ]
 
